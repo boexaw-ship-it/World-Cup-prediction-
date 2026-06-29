@@ -3,11 +3,11 @@
         "id": "fixture-1",
         "tabName": "BRA vs JPN",
         "stage": "ROUND OF 32",
-        "teamA": { "name": "Brazil", "flag": "assets/flags/brazil.png" },
-        "teamB": { "name": "Japan", "flag": "assets/flags/japan.png" },
+        "teamA": { "name": "Brazil", "flag": "assets/flags/f1.png" },
+        "teamB": { "name": "Japan", "flag": "assets/flags/f1a.png" },
         "groupResults": {
-            "teamA": "Group C - 2 Wins, 1 Draw (7 PTS)",
-            "teamB": "Group F - 1 Win, 2 Draws (5 PTS)"
+            "teamA": "စကော့တလန် ၀-၃ ဘရာဇီး၊ ဘရာဇီး ၃-၀ ဟေတီ၊ ဘရာဇီး ၁-၁ မော်ရိုကို (2W - 1D)",
+            "teamB": "ဂျပန် ၁-၁ ဆွီဒင်၊ တူနီးရှား ၀-၄ ဂျပန်၊ နယ်သာလန် ၂-၂ ဂျပန် (1W - 2D)"
         },
         "formations": {
             "teamAName": "4-1-2-3",
@@ -16,6 +16,44 @@
             "teamBLineup": [3, 4, 2, 1]
         },
         "winPercentage": { "teamA": 57, "draw": 18, "teamB": 25 },
-        "scorers": "Predicted Score: Brazil 3 - 1 Japan"
+        "scorers": "DoePhaGyi Prediction: Brazil 3 - 1 Japan"
+    },
+    {
+        "id": "fixture-2",
+        "tabName": "GER vs PAR",
+        "stage": "ROUND OF 32",
+        "teamA": { "name": "Germany", "flag": "assets/flags/f2.png" },
+        "teamB": { "name": "Paraguay", "flag": "assets/flags/f2a.png" },
+        "groupResults": {
+            "teamA": "အီကွေဒေါ ၂-၁ ဂျာမနီ၊ ဂျာမနီ ၂-၁ အိုင်ဗရီကို့စ်၊ ဂျာမနီ ၇-၁ ကျူရာဆောင်း (2W - 1L)",
+            "teamB": "ပါရာဂွေး ၀-၀ ဩစတြေးလျ၊ တူရကီ ၀-၁ ပါရာဂွေး၊ အမေရိကန် ၄-၁ ပါရာဂွေး (1W - 1D - 1L)"
+        },
+        "formations": {
+            "teamAName": "4-2-3-1",
+            "teamALineup": [4, 2, 3, 1],
+            "teamBName": "3-4-2-1",
+            "teamBLineup": [3, 4, 2, 1]
+        },
+        "winPercentage": { "teamA": 73, "draw": 14, "teamB": 13 },
+        "scorers": "DoePhaGyi Prediction: Germany 2 - 0 Paraguay"
+    },
+    {
+        "id": "fixture-3",
+        "tabName": "NED vs MAR",
+        "stage": "ROUND OF 32",
+        "teamA": { "name": "Netherlands", "flag": "assets/flags/f3.png" },
+        "teamB": { "name": "Morocco", "flag": "assets/flags/f3a.png" },
+        "groupResults": {
+            "teamA": "တူနီးရှား ၁-၃ နယ်သာလန်၊ နယ်သာလန် ၅-၁ ဆွီဒင်၊ နယ်သာလန် ၂-၂ ဂျပန် (2W - 1D)",
+            "teamB": "မော်ရိုကို ၄-၂ ဟေတီ၊ စကော့တလန် ၀-၁ မော်ရိုကို၊ ဘရာဇီး ၁-၁ မော်ရိုကို (2W - 1D)"
+        },
+        "formations": {
+            "teamAName": "4-3-3",
+            "teamALineup": [4, 3, 3],
+            "teamBName": "4-2-3-1",
+            "teamBLineup": [4, 2, 3, 1]
+        },
+        "winPercentage": { "teamA": 46, "draw": 18, "teamB": 36 },
+        "scorers": "DoePhaGyi Prediction: NED 1 - 1 MAR (90 წთ ႔ေနာက္ပိုင္း အခ်ိန္ပိုတြင္ Netherlands ႏိုင္မည္)"
     }
 ]
