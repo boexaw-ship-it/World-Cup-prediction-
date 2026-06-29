@@ -1,17 +1,23 @@
 let worldCupData = []; // JSON မှ ဒေတာများကို သိမ်းဆည်းမည့် Array
 let currentFixtureIndex = 0;
 
+// 🔊 အသံဖိုင် လမ်းကြောင်း သတ်မှတ်ခြင်း
+const clickSound = new Audio('assets/audio/click.mp3');
+
+// အသံကို နှိပ်လိုက်တိုင်း ကွက်တိ ထွက်စေရန် လုပ်ဆောင်သည့် Function
+function playClickSound() {
+    clickSound.currentTime = 0; // အသံကို အစကနေ ပြန်စရန် (ခလုတ်အမြန်နှိပ်ရင်လည်း အသံမထစ်စေရန်)
+    clickSound.play().catch(error => console.log("အသံဖိုင် ဖွင့်မရပါ ဆရာ-", error));
+}
+
 // 📥 ၁။ JSON ဖိုင်အား လှမ်းဖတ်ခြင်း (Fetch Data)
 async function fetchWorldCupData() {
     try {
-        // data.json ဖိုင်ထံမှ ဒေတာ တောင်းယူခြင်း
         const response = await fetch('data.json');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         worldCupData = await response.json();
-        
-        // ဒေတာ အောင်မြင်စွာရရှိပြီးမှ အပေါ်ဆုံး တက်ဘ်များကို စတင်ဖန်တီးခြင်း
         initTabs();
     } catch (error) {
         console.error("JSON ဖတ်ရတာ အဆင်မပြေပါဘူး ဆရာ။ ဖိုင်အမည်နှင့် လမ်းကြောင်းကို ပြန်စစ်ပေးပါ-", error);
@@ -26,29 +32,29 @@ function initTabs() {
     tabsContainer.innerHTML = "";
     worldCupData.forEach((match, index) => {
         const btn = document.createElement('button');
-        // ပထမဆုံးပွဲစဉ်ကို Active (အနီရောင်လင်းပဟေဠိ) အဖြစ် သတ်မှတ်ခြင်း
         btn.className = `fix-tab-btn ${index === 0 ? 'active' : ''}`;
         btn.innerText = match.tabName;
-        btn.onclick = () => switchFixture(index);
+        
+        // ပွဲစဉ်ခလုတ်ကို နှိပ်လျှင် အလုပ်လုပ်မည့်အပြင် အသံပါထွက်စေရန် တွဲပေးထားသည်
+        btn.onclick = () => {
+            playClickSound();
+            switchFixture(index);
+        };
         tabsContainer.appendChild(btn);
     });
 
-    // ပထမဆုံးပွဲစဉ်၏ ဒေတာကို ကတ်ပြားထဲသို့ စတင်ထည့်သွင်းခြင်း
     loadFixtureData(currentFixtureIndex);
 }
 
 // 🔄 ၃။ အပေါ်ဆုံး ပွဲစဉ်ခလုတ် နှိပ်လိုက်လျှင် ပြောင်းလဲခြင်း
 function switchFixture(index) {
     currentFixtureIndex = index;
-    
-    // ခလုတ်များ၏ Active အရောင်ကို လိုက်ပြောင်းခြင်း
     const buttons = document.querySelectorAll('.fix-tab-btn');
     buttons.forEach((btn, i) => {
         if (i === index) btn.classList.add('active');
         else btn.classList.remove('active');
     });
 
-    // ဒေတာအသစ်များကို ဆွဲတင်ပြီး အောက်ခြေကတ်ပြားကို နံပါတ် ၁ (Match) သို့ အလိုအလျောက် ပြန်ရွှေ့ခြင်း
     loadFixtureData(index);
     switchCardView(1); 
 }
@@ -58,10 +64,9 @@ function loadFixtureData(index) {
     const data = worldCupData[index];
     if (!data) return;
 
-    // 🏆 Stage Title ပြောင်းခြင်း (ဥပမာ- ROUND OF 32, QUARTER-FINAL)
     document.getElementById('card-stage').innerText = data.stage;
 
-    // --- CARD 1: MATCHUP DATA (အလံနှင့် အသင်းအမည်) ---
+    // --- CARD 1: MATCHUP DATA ---
     document.getElementById('flag-a').src = data.teamA.flag;
     document.getElementById('flag-b').src = data.teamB.flag;
     document.getElementById('name-a').innerText = data.teamA.name;
@@ -73,12 +78,11 @@ function loadFixtureData(index) {
     document.getElementById('res-text-a').innerText = data.groupResults.teamA;
     document.getElementById('res-text-b').innerText = data.groupResults.teamB;
 
-    // --- CARD 3: TACTICAL FORMATION GENERATOR (ဘောလုံးကွင်းပုံစံ) ---
+    // --- CARD 3: TACTICAL FORMATION GENERATOR ---
     const fData = data.formations;
     document.getElementById('badge-team-a').innerText = `${data.teamA.name} ${fData.teamAName}`;
     document.getElementById('badge-team-b').innerText = `${data.teamB.name} ${fData.teamBName}`;
 
-    // Team A (ဘယ်ဘက်ခြမ်း - အစိမ်းရောင် ကစားသမား Icons များစီခြင်း)
     const rowsTeamA = document.getElementById('rows-team-a');
     rowsTeamA.innerHTML = "";
     fData.teamALineup.forEach(count => {
@@ -92,7 +96,6 @@ function loadFixtureData(index) {
         rowsTeamA.appendChild(rowDiv);
     });
 
-    // Team B (ညာဘက်ခြမ်း - အနီရောင် ကစားသမား Icons များစီခြင်း)
     const rowsTeamB = document.getElementById('rows-team-b');
     rowsTeamB.innerHTML = "";
     fData.teamBLineup.forEach(count => {
@@ -106,7 +109,7 @@ function loadFixtureData(index) {
         rowsTeamB.appendChild(rowDiv);
     });
 
-    // --- CARD 4: WIN PROBABILITY DATA (Progress Bars) ---
+    // --- CARD 4: WIN PROBABILITY DATA ---
     const barA = document.getElementById('bar-a');
     const barDraw = document.getElementById('bar-draw');
     const barB = document.getElementById('bar-b');
@@ -129,14 +132,15 @@ function loadFixtureData(index) {
 
 // 🧭 ၅။ အောက်ခြေ ကတ်ပြားတက်ဘ် (၁ မှ ၅) သို့ ကူးပြောင်းခြင်း
 function switchCardView(viewNumber) {
-    // သက်ဆိုင်ရာ ကတ်ပြားအတွင်းပိုင်း Content များကို ပိတ်/ဖွင့် လုပ်ခြင်း
+    // အောက်ခြေခလုတ်တွေကို နှိပ်တဲ့အခါမှာလည်း အသံထွက်စေရန် ထည့်သွင်းထားသည်
+    playClickSound();
+
     const views = document.querySelectorAll('.card-view');
     views.forEach((view, i) => {
         if ((i + 1) === viewNumber) view.classList.add('active');
         else view.classList.remove('active');
     });
 
-    // အောက်ခြေခလုတ်များ၏ Active အရောင် (နီယွန်ပြာလိုင်း) ကို လိုက်ပြောင်းခြင်း
     const navBtns = document.querySelectorAll('.nav-btn');
     navBtns.forEach((btn, i) => {
         if ((i + 1) === viewNumber) btn.classList.add('active');
@@ -146,3 +150,4 @@ function switchCardView(viewNumber) {
 
 // 🚀 Browser စတင်ပတ်သည်နှင့် JSON ဒေတာကို အရင်ဆုံးဆွဲဖတ်ရန် ခေါ်ယူခြင်း
 window.onload = fetchWorldCupData;
+
