@@ -90,6 +90,38 @@ body {
 
 @keyframes fadeIn { from { opacity: 0; transform: scale(0.98); } to { opacity: 1; transform: scale(1); } }
 
+/* 🛡️ နိုင်ငံအလံပုံများအတွက် ဒီဇိုင်းပြင်ဆင်မှု (Shield Flags မျိုးအတွက် ကွက်တိဖြစ်စေမည့် ကုဒ်) */
+.matchup-display {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.team-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.team-flag {
+    width: 110px;        /* အလံပြသလိုသည့် အကျယ်အချိုး */
+    height: 75px;        /* အလံပြသလိုသည့် အမြင့်အချိုး */
+    object-fit: contain; /* Shield ပုံစံ အဝိုင်းကွေးဒီဇိုင်းများ ပုံမရှုံ့၊ မပြားစေရန် ထိန်းပေးခြင်း */
+    filter: drop-shadow(0px 6px 12px rgba(0, 0, 0, 0.6)); /* ပုံ၏ အနားသတ်ဖြူဖြူလေးအတိုင်း အရိပ်ကြွထွက်စေရန် */
+}
+.team-name {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.vs-glow {
+    font-size: 32px;
+    font-weight: 900;
+    font-style: italic;
+    color: #ff0055;
+    text-shadow: 0 0 15px #ff0055;
+}
+
 /* 🏷️ CARD VIEWS INTERIOR DESIGN (FONT များနှင့် BOX မွမ်းမံမှု) */
 .view-title { 
     color: #00f0ff; 
