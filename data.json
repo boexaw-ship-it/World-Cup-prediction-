@@ -1,78 +1,21 @@
 [
     {
         "id": "fixture-1",
-        "tabName": "BOS vs QAT",
-        "stage": "ROUND OF 32",
-        "teamA": { "name": "Bosnia", "flag": "assets/flags/bosnia.png" },
-        "teamB": { "name": "Qatar", "flag": "assets/flags/qatar.png" },
-        "groupResults": {
-            "teamA": "Group A Winner (2 Wins, 1 Draw) - 7 PTS",
-            "teamB": "Group B Runner-up (1 Win, 2 Draws) - 5 PTS"
-        },
-        "formations": {
-            "teamAName": "4-4-2",
-            "teamALineup": [4, 4, 2],
-            "teamBName": "4-3-3",
-            "teamBLineup": [4, 3, 3]
-        },
-        "winPercentage": { "teamA": 50, "draw": 20, "teamB": 30 },
-        "scorers": "Džeko (14') / Afif (60')"
-    },
-    {
-        "id": "fixture-2",
         "tabName": "BRA vs JPN",
         "stage": "ROUND OF 32",
         "teamA": { "name": "Brazil", "flag": "assets/flags/brazil.png" },
         "teamB": { "name": "Japan", "flag": "assets/flags/japan.png" },
         "groupResults": {
-            "teamA": "Group C Winner (3 Wins, 0 Losses) - 9 PTS",
-            "teamB": "Group D Runner-up (1 Win, 1 Draw, 1 Loss) - 4 PTS"
+            "teamA": "Group C - 2 Wins, 1 Draw (7 PTS)",
+            "teamB": "Group F - 1 Win, 2 Draws (5 PTS)"
         },
         "formations": {
-            "teamAName": "4-3-3",
-            "teamALineup": [4, 3, 3],
-            "teamBName": "4-2-3-1",
-            "teamBLineup": [4, 2, 3, 1]
+            "teamAName": "4-1-2-3",
+            "teamALineup": [4, 1, 2, 3],
+            "teamBName": "3-4-2-1",
+            "teamBLineup": [3, 4, 2, 1]
         },
-        "winPercentage": { "teamA": 65, "draw": 15, "teamB": 20 },
-        "scorers": "Vinícius Jr. (62'), Raphinha (78') / Mitoma (45')"
-    },
-    {
-        "id": "fixture-3",
-        "tabName": "GER vs PAR",
-        "stage": "ROUND OF 32",
-        "teamA": { "name": "Germany", "flag": "assets/flags/germany.png" },
-        "teamB": { "name": "Paraguay", "flag": "assets/flags/paraguay.png" },
-        "groupResults": {
-            "teamA": "Group E Winner (2 Wins, 1 Draw) - 7 PTS",
-            "teamB": "Group F Runner-up (1 Win, 2 Draws) - 5 PTS"
-        },
-        "formations": {
-            "teamAName": "4-2-3-1",
-            "teamALineup": [4, 2, 3, 1],
-            "teamBName": "5-3-2",
-            "teamBLineup": [5, 3, 2]
-        },
-        "winPercentage": { "teamA": 70, "draw": 18, "teamB": 12 },
-        "scorers": "Musiala (12'), Havertz (55') / Enciso (80')"
-    },
-    {
-        "id": "fixture-4",
-        "tabName": "FRA vs ENG",
-        "stage": "QUARTER-FINAL",
-        "teamA": { "name": "France", "flag": "assets/flags/france.png" },
-        "teamB": { "name": "England", "flag": "assets/flags/england.png" },
-        "groupResults": {
-            "teamA": "Group G Winner (2 Wins, 1 Draw) - 7 PTS",
-            "teamB": "Group H Winner (2 Wins, 1 Draw) - 7 PTS"
-        },
-        "formations": {
-            "teamAName": "4-2-3-1",
-            "teamALineup": [4, 2, 3, 1],
-            "teamBName": "4-3-3",
-            "teamBLineup": [4, 3, 3]
-        },
-        "winPercentage": { "teamA": 52, "draw": 20, "teamB": 28 },
-        "scorers": "Mbappé (23') / Bellingham (65')"
+        "winPercentage": { "teamA": 57, "draw": 18, "teamB": 25 },
+        "scorers": "Predicted Score: Brazil 3 - 1 Japan"
     }
 ]
