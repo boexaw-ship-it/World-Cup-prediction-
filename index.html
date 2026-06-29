@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WC 2026 Controller Overlay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="overlay-container">
+        
+        <div class="fixture-tabs" id="fixture-tabs-container">
+            </div>
+
+        <div class="prediction-card">
+            
+            <div class="card-stage" id="card-stage">ROUND OF 32</div>
+
+            <div class="card-content-area">
+                
+                <div class="card-view active" id="view-card1">
+                    <div class="matchup-display">
+                        <div class="team-block">
+                            <img src="" id="flag-a" class="team-flag" alt="Team A Flag">
+                            <span id="name-a" class="team-name">TEAM A</span>
+                        </div>
+                        <div class="vs-glow">VS</div>
+                        <div class="team-block">
+                            <img src="" id="flag-b" class="team-flag" alt="Team B Flag">
+                            <span id="name-b" class="team-name">TEAM B</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-view" id="view-card2">
+                    <h3 class="view-title">GROUP STAGE RESULTS</h3>
+                    <div class="result-box">
+                        <p><strong id="res-name-a">Team A</strong>: <span id="res-text-a"></span></p>
+                        <hr class="card-divider">
+                        <p><strong id="res-name-b">Team B</strong>: <span id="res-text-b"></span></p>
+                    </div>
+                </div>
+
+                <div class="card-view" id="view-card3">
+                    <div class="tactical-pitch">
+                        <div class="pitch-center-line"></div>
+                        <div class="pitch-center-circle"></div>
+                        
+                        <div class="pitch-side team-left">
+                            <div class="formation-badge badge-left" id="badge-team-a">TEAM A 0-0-0</div>
+                            <div class="goal-box box-left">
+                                <div class="player-icon gk-left"></div> </div>
+                            <div class="tactical-rows" id="rows-team-a">
+                                </div>
+                        </div>
+
+                        <div class="pitch-side team-right">
+                            <div class="formation-badge badge-right" id="badge-team-b">TEAM B 0-0-0</div>
+                            <div class="goal-box box-right">
+                                <div class="player-icon gk-right"></div> </div>
+                            <div class="tactical-rows" id="rows-team-b">
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-view" id="view-card4">
+                    <h3 class="view-title">WIN PROBABILITY</h3>
+                    <div class="prob-bar-container">
+                        <div class="prob-bar progress-a" id="bar-a">0%</div>
+                        <div class="prob-bar progress-draw" id="bar-draw">0%</div>
+                        <div class="prob-bar progress-b" id="bar-b">0%</div>
+                    </div>
+                    <div class="prob-labels">
+                        <span id="label-name-a">A</span>
+                        <span>DRAW</span>
+                        <span id="label-name-b">B</span>
+                    </div>
+                </div>
+
+                <div class="card-view" id="view-card5">
+                    <h3 class="view-title">PREDICTED SCORERS</h3>
+                    <div class="scorer-box">
+                        <span class="boot-icon">👟⚽</span>
+                        <p id="scorer-text"></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-navigation-tabs">
+                <button class="nav-btn active" onclick="switchCardView(1)">1. Match</button>
+                <button class="nav-btn" onclick="switchCardView(2)">2. Group</button>
+                <button class="nav-btn" onclick="switchCardView(3)">3. Formation</button>
+                <button class="nav-btn" onclick="switchCardView(4)">4. Win %</button>
+                <button class="nav-btn" onclick="switchCardView(5)">5. Scorers</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
