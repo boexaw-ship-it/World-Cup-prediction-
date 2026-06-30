@@ -5,7 +5,7 @@ let currentFixtureIndex = 0;
 const clickSound = new Audio('assets/audio/click.mp3');
 
 // 🛠️ click bar အသံကို ၃၀% အထိ လျှော့ချထားပါသည် (0.0 မှ 1.0 အထိ ထားနိုင်ပြီး 0.3 သည် အသံတိုးတိုးလေးဖြစ်စေပါသည်)
-clickSound.volume = 0.3; 
+clickSound.volume = 0.1; 
 
 // အသံကို နှိပ်လိုက်တိုင်း ကွက်တိ ထွက်စေရန် လုပ်ဆောင်သည့် Function
 function playClickSound() {
