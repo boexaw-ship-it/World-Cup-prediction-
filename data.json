@@ -1,51 +1,13 @@
 [
     {
         "id": "fixture-1",
-        "tabName": "BRA vs JPN",
+        "tabName": "CIV vs NOR",
         "stage": "ROUND OF 32",
-        "teamA": { "name": "Brazil", "flag": "assets/flags/f1.png" },
-        "teamB": { "name": "Japan", "flag": "assets/flags/f1a.png" },
+        "teamA": { "name": "Ivory Coast", "flag": "assets/flags/f1.png" },
+        "teamB": { "name": "Norway", "flag": "assets/flags/f1a.png" },
         "groupResults": {
-            "teamA": "စကော့တလန် ၀-၃ ဘရာဇီး၊ ဘရာဇီး ၃-၀ ဟေတီ၊ ဘရာဇီး ၁-၁ မော်ရိုကို (2W - 1D)",
-            "teamB": "ဂျပန် ၁-၁ ဆွီဒင်၊ တူနီးရှား ၀-၄ ဂျပန်၊ နယ်သာလန် ၂-၂ ဂျပန် (1W - 2D)"
-        },
-        "formations": {
-            "teamAName": "4-1-2-3",
-            "teamALineup": [4, 1, 2, 3],
-            "teamBName": "3-4-2-1",
-            "teamBLineup": [3, 4, 2, 1]
-        },
-        "winPercentage": { "teamA": 57, "draw": 18, "teamB": 25 },
-        "scorers": "DoePhaGyi Prediction: Brazil 3 - 1 Japan"
-    },
-    {
-        "id": "fixture-2",
-        "tabName": "GER vs PAR",
-        "stage": "ROUND OF 32",
-        "teamA": { "name": "Germany", "flag": "assets/flags/f2.png" },
-        "teamB": { "name": "Paraguay", "flag": "assets/flags/f2a.png" },
-        "groupResults": {
-            "teamA": "အီကွေဒေါ ၂-၁ ဂျာမနီ၊ ဂျာမနီ ၂-၁ အိုင်ဗရီကို့စ်၊ ဂျာမနီ ၇-၁ ကျူရာဆောင်း (2W - 1L)",
-            "teamB": "ပါရာဂွေး ၀-၀ ဩစတြေးလျ၊ တူရကီ ၀-၁ ပါရာဂွေး၊ အမေရိကန် ၄-၁ ပါရာဂွေး (1W - 1D - 1L)"
-        },
-        "formations": {
-            "teamAName": "4-2-3-1",
-            "teamALineup": [4, 2, 3, 1],
-            "teamBName": "3-4-2-1",
-            "teamBLineup": [3, 4, 2, 1]
-        },
-        "winPercentage": { "teamA": 73, "draw": 14, "teamB": 13 },
-        "scorers": "DoePhaGyi Prediction: Germany 2 - 0 Paraguay"
-    },
-    {
-        "id": "fixture-3",
-        "tabName": "NED vs MAR",
-        "stage": "ROUND OF 32",
-        "teamA": { "name": "Netherlands", "flag": "assets/flags/f3.png" },
-        "teamB": { "name": "Morocco", "flag": "assets/flags/f3a.png" },
-        "groupResults": {
-            "teamA": "တူနီးရှား ၁-၃ နယ်သာလန်၊ နယ်သာလန် ၅-၁ ဆွီဒင်၊ နယ်သာလန် ၂-၂ ဂျပန် (2W - 1D)",
-            "teamB": "မော်ရိုကို ၄-၂ ဟေတီ၊ စကော့တလန် ၀-၁ မော်ရိုကို၊ ဘရာဇီး ၁-၁ မော်ရိုကို (2W - 1D)"
+            "teamA": "Curacao 0-2 Ivory Coast (W) | Germany 2-1 Ivory Coast (L) | Ivory Coast 1-0 Ecuador (W) [2W-1L]",
+            "teamB": "Norway 1-4 France (L) | Norway 3-2 Senegal (W) | Iraq 1-4 Norway (W) [2W-1L]"
         },
         "formations": {
             "teamAName": "4-3-3",
@@ -53,7 +15,46 @@
             "teamBName": "4-2-3-1",
             "teamBLineup": [4, 2, 3, 1]
         },
-        "winPercentage": { "teamA": 46, "draw": 18, "teamB": 36 },
-        "scorers": "DoePhaGyi Prediction: NED 2 - 2 MAR (90 အချိန်ပို နှင့် Netherlands နိုင် )"
+        "winPercentage": { "teamA": 19, "draw": 18, "teamB": 63 },
+        "scorers": "DoePhaGyi Prediction: Ivory Coast 1 - 2 Norway"
+    },
+    {
+        "id": "fixture-2",
+        "tabName": "FRA vs SWE",
+        "stage": "ROUND OF 32",
+        "teamA": { "name": "France", "flag": "assets/flags/f2.png" },
+        "teamB": { "name": "Sweden", "flag": "assets/flags/f2a.png" },
+        "groupResults": {
+            "teamA": "Norway 1-4 France (W) | France 3-0 Iraq (W) | France 3-1 Senegal (W) [3W]",
+            "teamB": "Japan 1-1 Sweden (D) | Netherlands 5-1 Sweden (L) | Sweden 5-1 Tunisia (W) [1W-1D-1L]"
+        },
+        "formations": {
+            "teamAName": "4-2-3-1",
+            "teamALineup": [4, 2, 3, 1],
+            "teamBName": "3-4-3",
+            "teamBLineup": [3, 4, 3]
+        },
+        "winPercentage": { "teamA": 72, "draw": 13, "teamB": 15 },
+        "scorers": "DoePhaGyi Prediction: France 2 - 0 Sweden"
+    },
+    {
+        "id": "fixture-3",
+        "tabName": "MEX vs ECU",
+        "stage": "ROUND OF 32",
+        "teamA": { "name": "Mexico", "flag": "assets/flags/f3.png" },
+        "teamB": { "name": "Ecuador", "flag": "assets/flags/f3a.png" },
+        "groupResults": {
+            "teamA": "Czech Republic 0-3 Mexico (W) | Mexico 1-0 South Korea (W) | Mexico 2-0 South Africa (W) [3W]",
+            "teamB": "Ecuador 2-1 Germany (W) | Ecuador 0-0 Curacao (D) | Ivory Coast 1-0 Ecuador (L) [1W-1D-1L]"
+        },
+        "formations": {
+            "teamAName": "4-1-4-1",
+            "teamALineup": [4, 1, 4, 1],
+            "teamBName": "4-4-2",
+            "teamBLineup": [4, 4, 2]
+        },
+        "winPercentage": { "teamA": 61, "draw": 14, "teamB": 25 },
+        "scorers": "DoePhaGyi Prediction: Mexico 2 - 1 Ecuador"
     }
 ]
+
