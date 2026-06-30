@@ -4,6 +4,9 @@ let currentFixtureIndex = 0;
 // 🔊 အသံဖိုင် လမ်းကြောင်း သတ်မှတ်ခြင်း
 const clickSound = new Audio('assets/audio/click.mp3');
 
+// 🛠️ click bar အသံကို ၃၀% အထိ လျှော့ချထားပါသည် (0.0 မှ 1.0 အထိ ထားနိုင်ပြီး 0.3 သည် အသံတိုးတိုးလေးဖြစ်စေပါသည်)
+clickSound.volume = 0.3; 
+
 // အသံကို နှိပ်လိုက်တိုင်း ကွက်တိ ထွက်စေရန် လုပ်ဆောင်သည့် Function
 function playClickSound() {
     clickSound.currentTime = 0; // အသံကို အစကနေ ပြန်စရန် (ခလုတ်အမြန်နှိပ်ရင်လည်း အသံမထစ်စေရန်)
@@ -132,7 +135,7 @@ function loadFixtureData(index) {
 
 // 🧭 ၅။ အောက်ခြေ ကတ်ပြားတက်ဘ် (၁ မှ ၅) သို့ ကူးပြောင်းခြင်း
 function switchCardView(viewNumber) {
-    // အောက်ခြေခလုတ်တွေကို နှိပ်တဲ့အခါမှာလည်း အသံထွက်စေရန် ထည့်သွင်းထားသည်
+    // အောက်ခြေခလုတ်တွေကို နှိပ်တဲ့အခါမှာလည်း လျှော့ချထားသည့်အသံအတိုင်း ထွက်ပါမည်
     playClickSound();
 
     const views = document.querySelectorAll('.card-view');
@@ -150,4 +153,3 @@ function switchCardView(viewNumber) {
 
 // 🚀 Browser စတင်ပတ်သည်နှင့် JSON ဒေတာကို အရင်ဆုံးဆွဲဖတ်ရန် ခေါ်ယူခြင်း
 window.onload = fetchWorldCupData;
-
