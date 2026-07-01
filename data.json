@@ -3,57 +3,57 @@
         "id": "fixture-1",
         "tabName": "ENG vs RDC",
         "stage": "ROUND OF 32",
-        "teamA": { "name": "England", "flag": "assets/flags/england.png" },
-        "teamB": { "name": "Congo DR", "flag": "assets/flags/dr_congo.png" },
+        "teamA": { "name": "England", "flag": "assets/flags/f1.png" },
+        "teamB": { "name": "Congo DR", "flag": "assets/flags/f1a.png" },
         "groupResults": {
-            "teamA": "England Group Match Results: 3 Wins, 0 Draws, 0 Losses [3W] - 9 PTS",
+            "teamA": "England Group Match Results: 2 Wins, 1 Draws, 0 Losses [2W-1D] - 7 PTS",
             "teamB": "Congo DR Group Match Results: 1 Win, 1 Draw, 1 Loss [1W-1D-1L] - 4 PTS"
         },
         "formations": {
             "teamAName": "4-2-3-1",
             "teamALineup": [4, 2, 3, 1],
-            "teamBName": "4-1-4-1",
-            "teamBLineup": [4, 1, 4, 1]
+            "teamBName": "5-3-2",
+            "teamBLineup": [5, 3, 2]
         },
-        "winPercentage": { "teamA": 71, "draw": 17, "teamB": 12 },
+        "winPercentage": { "teamA": 69, "draw": 16, "teamB": 15 },
         "scorers": "DoePhaGyi Prediction: England 2 - 0 Congo DR"
     },
     {
         "id": "fixture-2",
         "tabName": "BEL vs SEN",
         "stage": "ROUND OF 32",
-        "teamA": { "name": "Belgium", "flag": "assets/flags/belgium.png" },
-        "teamB": { "name": "Senegal", "flag": "assets/flags/senegal.png" },
+        "teamA": { "name": "Belgium", "flag": "assets/flags/f2.png" },
+        "teamB": { "name": "Senegal", "flag": "assets/flags/f2a.png" },
         "groupResults": {
-            "teamA": "Belgium Group Match Results: 1 Win, 1 Draw, 1 Loss [1W-1D-1L] - 4 PTS",
-            "teamB": "Senegal Group Match Results: 2 Wins, 1 Draw, 0 Losses [2W-1D] - 7 PTS"
+            "teamA": "Belgium Group Match Results: 1 Win, 1 Draw, 1 Loss [1W-2D] - 5 PTS",
+            "teamB": "Senegal Group Match Results: 2 Wins, 1 Draw, 0 Losses [1W] - 3 PTS"
         },
         "formations": {
-            "teamAName": "4-3-3",
-            "teamALineup": [4, 3, 3],
+            "teamAName": "4-2-3-1",
+            "teamALineup": [4, 2, 3, 1],
             "teamBName": "4-3-3",
             "teamBLineup": [4, 3, 3]
         },
-        "winPercentage": { "teamA": 52, "draw": 23, "teamB": 25 },
+        "winPercentage": { "teamA": 49, "draw": 20, "teamB": 31 },
         "scorers": "DoePhaGyi Prediction: Belgium 2 - 1 Senegal"
     },
     {
         "id": "fixture-3",
         "tabName": "USA vs BIH",
         "stage": "ROUND OF 32",
-        "teamA": { "name": "USA", "flag": "assets/flags/usa.png" },
-        "teamB": { "name": "Bosnia", "flag": "assets/flags/bosnia.png" },
+        "teamA": { "name": "USA", "flag": "assets/flags/f3.png" },
+        "teamB": { "name": "Bosnia", "flag": "assets/flags/f3a.png" },
         "groupResults": {
-            "teamA": "USA Group Match Results: 1 Win, 0 Draws, 2 Losses [1W-2L] - 3 PTS",
+            "teamA": "USA Group Match Results: 1 Win, 0 Draws, 2 Losses [2W-1L] - 6 PTS",
             "teamB": "Bosnia Group Match Results: 1 Win, 1 Draw, 1 Loss [1W-1D-1L] - 4 PTS"
         },
         "formations": {
-            "teamAName": "4-3-3",
-            "teamALineup": [4, 3, 3],
-            "teamBName": "4-2-3-1",
-            "teamBLineup": [4, 2, 3, 1]
+            "teamAName": "3-4-2-1",
+            "teamALineup": [3, 4, 2, 1],
+            "teamBName": "4-4-2",
+            "teamBLineup": [4, 4, 2]
         },
-        "winPercentage": { "teamA": 58, "draw": 24, "teamB": 18 },
+        "winPercentage": { "teamA": 65, "draw": 14, "teamB": 21 },
         "scorers": "DoePhaGyi Prediction: USA 1 - 0 Bosnia"
     }
 ]
