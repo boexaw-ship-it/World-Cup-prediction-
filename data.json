@@ -1,13 +1,51 @@
 [
     {
         "id": "fixture-1",
-        "tabName": "CIV vs NOR",
+        "tabName": "ENG vs RDC",
         "stage": "ROUND OF 32",
-        "teamA": { "name": "Ivory Coast", "flag": "assets/flags/f1.png" },
-        "teamB": { "name": "Norway", "flag": "assets/flags/f1a.png" },
+        "teamA": { "name": "England", "flag": "assets/flags/england.png" },
+        "teamB": { "name": "Congo DR", "flag": "assets/flags/dr_congo.png" },
         "groupResults": {
-            "teamA": "Curacao 0-2 Ivory Coast (W) | Germany 2-1 Ivory Coast (L) | Ivory Coast 1-0 Ecuador (W) [2W-1L]",
-            "teamB": "Norway 1-4 France (L) | Norway 3-2 Senegal (W) | Iraq 1-4 Norway (W) [2W-1L]"
+            "teamA": "England Group Match Results: 3 Wins, 0 Draws, 0 Losses [3W] - 9 PTS",
+            "teamB": "Congo DR Group Match Results: 1 Win, 1 Draw, 1 Loss [1W-1D-1L] - 4 PTS"
+        },
+        "formations": {
+            "teamAName": "4-2-3-1",
+            "teamALineup": [4, 2, 3, 1],
+            "teamBName": "4-1-4-1",
+            "teamBLineup": [4, 1, 4, 1]
+        },
+        "winPercentage": { "teamA": 71, "draw": 17, "teamB": 12 },
+        "scorers": "DoePhaGyi Prediction: England 2 - 0 Congo DR"
+    },
+    {
+        "id": "fixture-2",
+        "tabName": "BEL vs SEN",
+        "stage": "ROUND OF 32",
+        "teamA": { "name": "Belgium", "flag": "assets/flags/belgium.png" },
+        "teamB": { "name": "Senegal", "flag": "assets/flags/senegal.png" },
+        "groupResults": {
+            "teamA": "Belgium Group Match Results: 1 Win, 1 Draw, 1 Loss [1W-1D-1L] - 4 PTS",
+            "teamB": "Senegal Group Match Results: 2 Wins, 1 Draw, 0 Losses [2W-1D] - 7 PTS"
+        },
+        "formations": {
+            "teamAName": "4-3-3",
+            "teamALineup": [4, 3, 3],
+            "teamBName": "4-3-3",
+            "teamBLineup": [4, 3, 3]
+        },
+        "winPercentage": { "teamA": 52, "draw": 23, "teamB": 25 },
+        "scorers": "DoePhaGyi Prediction: Belgium 2 - 1 Senegal"
+    },
+    {
+        "id": "fixture-3",
+        "tabName": "USA vs BIH",
+        "stage": "ROUND OF 32",
+        "teamA": { "name": "USA", "flag": "assets/flags/usa.png" },
+        "teamB": { "name": "Bosnia", "flag": "assets/flags/bosnia.png" },
+        "groupResults": {
+            "teamA": "USA Group Match Results: 1 Win, 0 Draws, 2 Losses [1W-2L] - 3 PTS",
+            "teamB": "Bosnia Group Match Results: 1 Win, 1 Draw, 1 Loss [1W-1D-1L] - 4 PTS"
         },
         "formations": {
             "teamAName": "4-3-3",
@@ -15,46 +53,7 @@
             "teamBName": "4-2-3-1",
             "teamBLineup": [4, 2, 3, 1]
         },
-        "winPercentage": { "teamA": 19, "draw": 18, "teamB": 63 },
-        "scorers": "DoePhaGyi Prediction: Ivory Coast 1 - 2 Norway"
-    },
-    {
-        "id": "fixture-2",
-        "tabName": "FRA vs SWE",
-        "stage": "ROUND OF 32",
-        "teamA": { "name": "France", "flag": "assets/flags/f2.png" },
-        "teamB": { "name": "Sweden", "flag": "assets/flags/f2a.png" },
-        "groupResults": {
-            "teamA": "Norway 1-4 France (W) | France 3-0 Iraq (W) | France 3-1 Senegal (W) [3W]",
-            "teamB": "Japan 1-1 Sweden (D) | Netherlands 5-1 Sweden (L) | Sweden 5-1 Tunisia (W) [1W-1D-1L]"
-        },
-        "formations": {
-            "teamAName": "4-2-3-1",
-            "teamALineup": [4, 2, 3, 1],
-            "teamBName": "3-4-3",
-            "teamBLineup": [3, 4, 3]
-        },
-        "winPercentage": { "teamA": 72, "draw": 13, "teamB": 15 },
-        "scorers": "DoePhaGyi Prediction: France 2 - 0 Sweden"
-    },
-    {
-        "id": "fixture-3",
-        "tabName": "MEX vs ECU",
-        "stage": "ROUND OF 32",
-        "teamA": { "name": "Mexico", "flag": "assets/flags/f3.png" },
-        "teamB": { "name": "Ecuador", "flag": "assets/flags/f3a.png" },
-        "groupResults": {
-            "teamA": "Czech Republic 0-3 Mexico (W) | Mexico 1-0 South Korea (W) | Mexico 2-0 South Africa (W) [3W]",
-            "teamB": "Ecuador 2-1 Germany (W) | Ecuador 0-0 Curacao (D) | Ivory Coast 1-0 Ecuador (L) [1W-1D-1L]"
-        },
-        "formations": {
-            "teamAName": "4-1-4-1",
-            "teamALineup": [4, 1, 4, 1],
-            "teamBName": "4-4-2",
-            "teamBLineup": [4, 4, 2]
-        },
-        "winPercentage": { "teamA": 61, "draw": 14, "teamB": 25 },
-        "scorers": "DoePhaGyi Prediction: Mexico 2 - 1 Ecuador"
+        "winPercentage": { "teamA": 58, "draw": 24, "teamB": 18 },
+        "scorers": "DoePhaGyi Prediction: USA 1 - 0 Bosnia"
     }
 ]
-
